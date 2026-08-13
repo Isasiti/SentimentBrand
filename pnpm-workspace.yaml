@@ -1,0 +1,3 @@
+packages:
+  - "Frontend"
+  # el backend es Python/FastAPI y no participa del workspace de pnpm.

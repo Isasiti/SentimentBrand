@@ -1,0 +1,61 @@
+:root {
+  /* Color */
+  --ink: #14182b;
+  --ink-2: #1e2340;
+  --ink-3: #2a2f52;
+  --paper: #f5f6f8;
+  --paper-2: #ffffff;
+  --teal: #4fbf95;
+  --coral: #e2694b;
+  --neutral: #8a8f9c;
+  --text-on-dark: #f5f6f8;
+  --text-on-dark-secondary: #9ca3c4;
+  --text-ink: #14182b;
+  --text-secondary: #5b6072;
+  --text-muted: #9aa0ae;
+  --border: #e2e4ea;
+
+  /* Tipografía */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
